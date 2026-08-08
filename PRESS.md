@@ -116,11 +116,12 @@ Android's built-in accessibility framework.
 
 | Statistic | Source |
 |:----------|:-------|
-| **71 studies** meta-analysed (N = 98,299) showing short-form video use linked to poorer cognition | [Nguyen et al., 2025](https://doi.org/10.1037/bul0005001) |
-| **r = -.38** correlation between short-form video use and attention deficits | [Nguyen et al., 2025](https://doi.org/10.1037/bul0005001) |
-| **r = -.41** correlation between short-form video use and inhibitory control deficits | [Nguyen et al., 2025](https://doi.org/10.1037/bul0005001) |
-| **r = .39** correlation between short-form video addiction and depression | [Fan et al., 2025](https://doi.org/10.3389/fpsyg.2025.1622175) |
-| **5 days** of short-video restriction improved selective attention and reduced compulsive brain activity | [Wang et al., 2025](https://doi.org/10.1016/j.neuroimage.2025.121029) |
+| **71 studies** meta-analysed (N = 98,299) showing short-form video use linked to poorer cognition | [Nguyen et al., 2025](https://doi.org/10.1037/bul0000498) |
+| **r = -.38** correlation between short-form video use and attention deficits | [Nguyen et al., 2025](https://doi.org/10.1037/bul0000498) |
+| **r = -.41** correlation between short-form video use and inhibitory control deficits | [Nguyen et al., 2025](https://doi.org/10.1037/bul0000498) |
+| **r = -.34** correlation between short-form video use and stress | [Nguyen et al., 2025](https://doi.org/10.1037/bul0000498) |
+| **r = -.33** correlation between short-form video use and anxiety | [Nguyen et al., 2025](https://doi.org/10.1037/bul0000498) |
+| **2 weeks** of blocking mobile internet improved sustained attention; 91% of participants improved | [Castelo et al., 2025](https://doi.org/10.1093/pnasnexus/pgaf017) |
 
 ### The product
 
@@ -132,42 +133,38 @@ Android's built-in accessibility framework.
 | **Network permissions** | 0 |
 | **Root required** | No |
 | **Minimum Android version** | 13 (API 33) |
-| **App size** | ~3 MB |
+| **App size** | ~4 MB |
 
 ---
 
 ## Research citations
 
-### Nguyen, T., et al. (2025)
+### Nguyen, L., et al. (2025)
 
-> "Short-form video use and cognitive outcomes: A meta-analysis."
-> *Psychological Bulletin*.
+> "Feeds, feelings, and focus: A systematic review and meta-analysis examining the cognitive and
+> mental health correlates of short-form video use."
+> *Psychological Bulletin*, 151(9), 1125–1146.
 
 Meta-analysis of 71 studies with a combined sample of 98,299 participants. Found that heavier
 short-form video use is associated with poorer cognition overall (r = -.34), with the largest
-deficits in attention (r = -.38) and inhibitory control (r = -.41).
+deficits in attention (r = -.38) and inhibitory control (r = -.41). Also found poorer mental
+health (r = -.21), with stress (r = -.34) and anxiety (r = -.33) showing the strongest
+associations.
 
-DOI: [10.1037/bul0005001](https://doi.org/10.1037/bul0005001)
+DOI: [10.1037/bul0000498](https://doi.org/10.1037/bul0000498)
 
-### Fan, C., et al. (2025)
+### Castelo, N., et al. (2025)
 
-> "Short-form video addiction and mental health outcomes."
-> *Frontiers in Psychology*.
+> "Blocking mobile internet on smartphones improves sustained attention, mental health, and
+> subjective well-being."
+> *PNAS Nexus*, 4(2), pgaf017.
 
-Found that short-form video addiction is linked to depression (r = .39), anxiety, sleep
-disturbance, and social isolation.
+A month-long randomized controlled trial in which participants blocked all mobile internet
+access on their smartphones for 2 weeks. The intervention improved mental health, subjective
+well-being, and objectively measured sustained attention; 91% of participants improved on at
+least one outcome.
 
-DOI: [10.3389/fpsyg.2025.1622175](https://doi.org/10.3389/fpsyg.2025.1622175)
-
-### Wang, L., et al. (2025)
-
-> "Effects of short-video restriction on brain activity and attention."
-> *NeuroImage*.
-
-Experimental study finding that just five days of short-video restriction improved selective
-attention and measurably reduced activity in the brain's default-mode and visual networks.
-
-DOI: [10.1016/j.neuroimage.2025.121029](https://doi.org/10.1016/j.neuroimage.2025.121029)
+DOI: [10.1093/pnasnexus/pgaf017](https://doi.org/10.1093/pnasnexus/pgaf017)
 
 ---
 

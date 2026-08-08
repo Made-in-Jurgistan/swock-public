@@ -50,31 +50,32 @@ A 2025 meta-analysis of **71 studies** (N = 98,299) found heavier short-form vid
 
 <br>
 
-<sub>[Nguyen et al., 2025<br>Psychological Bulletin](https://doi.org/10.1037/bul0005001)</sub>
+<sub>[Nguyen et al., 2025<br>Psychological Bulletin](https://doi.org/10.1037/bul0000498)</sub>
 
 </td>
 <td width="33%" align="center" valign="top">
 
 ### Mental health
 
-Meta-analyses link short-form video addiction to **depression** (r = .39), anxiety, sleep
-disturbance, and social isolation.
+The same meta-analysis found short-form video use linked to **poorer mental health** (r = -.21),
+with **stress** (r = -.34) and **anxiety** (r = -.33) showing the strongest associations.
 
 <br>
 
-<sub>[Fan et al., 2025<br>Frontiers in Psychology](https://doi.org/10.3389/fpsyg.2025.1622175)</sub>
+<sub>[Nguyen et al., 2025<br>Psychological Bulletin](https://doi.org/10.1037/bul0000498)</sub>
 
 </td>
 <td width="33%" align="center" valign="top">
 
 ### It's reversible
 
-Just **five days** of short-video restriction improved selective attention and reduced
-compulsive brain activity.
+A 2025 randomized controlled trial found that **2 weeks** of blocking mobile internet on
+smartphones improved **sustained attention**, mental health, and well-being. **91%** of
+participants improved.
 
 <br>
 
-<sub>[Wang et al., 2025<br>NeuroImage](https://doi.org/10.1016/j.neuroimage.2025.121029)</sub>
+<sub>[Castelo et al., 2025<br>PNAS Nexus](https://doi.org/10.1093/pnasnexus/pgaf017)</sub>
 
 </td>
 </tr>
@@ -305,20 +306,20 @@ Journalists, reviewers, and content creators — see the **[Press Kit](PRESS.md)
 Short-form video use is associated with measurable cognitive and mental health costs. The
 following peer-reviewed studies informed Swock's design:
 
-1. **Nguyen, T., et al. (2025)**. "Short-form video use and cognitive outcomes: A meta-analysis."
-   *Psychological Bulletin*. N = 98,299 across 71 studies. Found heavier use linked to poorer
-   attention (r = -.38) and inhibitory control (r = -.41).
-   [DOI: 10.1037/bul0005001](https://doi.org/10.1037/bul0005001)
+1. **Nguyen, L., et al. (2025)**. "Feeds, feelings, and focus: A systematic review and
+   meta-analysis examining the cognitive and mental health correlates of short-form video use."
+   *Psychological Bulletin*, 151(9), 1125–1146. N = 98,299 across 71 studies. Found heavier use
+   linked to poorer cognition (r = -.34), with attention (r = -.38) and inhibitory control
+   (r = -.41) showing the strongest associations. Also found poorer mental health (r = -.21),
+   with stress (r = -.34) and anxiety (r = -.33) showing the strongest associations.
+   [DOI: 10.1037/bul0000498](https://doi.org/10.1037/bul0000498)
 
-2. **Fan, C., et al. (2025)**. "Short-form video addiction and mental health outcomes."
-   *Frontiers in Psychology*. Found links to depression (r = .39), anxiety, sleep disturbance,
-   and social isolation.
-   [DOI: 10.3389/fpsyg.2025.1622175](https://doi.org/10.3389/fpsyg.2025.1622175)
-
-3. **Wang, L., et al. (2025)**. "Effects of short-video restriction on brain activity and
-   attention." *NeuroImage*. Found that five days of restriction improved selective attention
-   and reduced compulsive brain activity.
-   [DOI: 10.1016/j.neuroimage.2025.121029](https://doi.org/10.1016/j.neuroimage.2025.121029)
+2. **Castelo, N., et al. (2025)**. "Blocking mobile internet on smartphones improves sustained
+   attention, mental health, and subjective well-being." *PNAS Nexus*, 4(2), pgaf017. A
+   randomized controlled trial found that 2 weeks of blocking mobile internet on smartphones
+   improved sustained attention, mental health, and well-being; 91% of participants improved on
+   at least one outcome.
+   [DOI: 10.1093/pnasnexus/pgaf017](https://doi.org/10.1093/pnasnexus/pgaf017)
 
 ---
 
