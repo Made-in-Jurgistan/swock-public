@@ -1,6 +1,8 @@
 <div align="center">
 
-<img src="swock_logo.png" width="100" alt="Swock">
+<img src="swock_logo.png" width="64" alt="Swock app logo — shield icon">
+<br>
+<img src="swock_wordmark.jpg" width="280" alt="Swock wordmark">
 
 # FAQ — Frequently Asked Questions
 
@@ -251,8 +253,9 @@ touch interception API that Swock uses.
 <details>
 <summary><b>Is the APK available for sideloading?</b></summary>
 
-Yes. Swock can be sideloaded. Download the APK and install it with `adb install swock.apk`. Enable
-the accessibility service after installation.
+Yes. Swock can be sideloaded. Download the latest APK from
+[GitHub Releases](https://github.com/Made-in-Jurgistan/swock-public/releases) and install it with
+`adb install swock-v1.0.0-debug.apk`. Enable the accessibility service after installation.
 
 </details>
 

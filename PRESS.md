@@ -1,10 +1,10 @@
 <div align="center">
 
-<img src="swock_logo.png" width="120" alt="Swock">
+<img src="swock_logo.png" width="80" alt="Swock app logo — shield icon">
+<br>
+<img src="swock_wordmark.jpg" width="320" alt="Swock wordmark">
 
 # Press Kit
-
-### Swock — Swipe Blocker for Short Videos
 
 **An Android app that breaks the scroll loop by blocking a single gesture.**
 
@@ -50,7 +50,7 @@
 | **Data collection** | None |
 | **Network access** | None (no INTERNET permission) |
 | **Root required** | No |
-| **Download** | [Google Play](https://play.google.com/store/apps/details?id=com.swock) |
+| **Download** | [Google Play](https://play.google.com/store/apps/details?id=com.swock) · [APK releases](https://github.com/Made-in-Jurgistan/swock-public/releases) |
 | **Website** | [github.com/Made-in-Jurgistan/swock-public](https://github.com/Made-in-Jurgistan/swock-public) |
 
 ---
@@ -161,7 +161,7 @@ Android's built-in accessibility framework.
 | **Network permissions** | 0 |
 | **Root required** | No |
 | **Minimum Android version** | 13 (API 33) |
-| **App size** | ~4 MB |
+| **App size** | ~62 MB (debug build); release build smaller with R8 shrinking |
 
 ---
 
@@ -385,7 +385,8 @@ intentional.
 
 | Asset | Format | Available from |
 |:------|:-------|:---------------|
-| App logo | PNG | This repository (`swock_logo.png`) |
+| App logo (shield) | PNG | This repository (`swock_logo.png`) |
+| Wordmark | JPG | This repository (`swock_wordmark.jpg`) |
 | App icon | PNG | Google Play Store listing |
 | Screenshots | PNG | Google Play Store listing |
 | Brand colour | Cobalt Blue `#0047AB` | — |
