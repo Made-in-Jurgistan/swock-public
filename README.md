@@ -67,11 +67,12 @@ with **stress** (r = -.34) and **anxiety** (r = -.33) showing the strongest asso
 </td>
 <td width="33%" align="center" valign="top">
 
-### It's reversible
+### Reducing access can help
 
 A 2025 randomized controlled trial found that **2 weeks** of blocking mobile internet on
 smartphones improved **sustained attention**, mental health, and well-being. **91%** of
-participants improved.
+participants improved. This study tested total internet blocking, not Swock specifically —
+but it suggests that reducing digital access can produce measurable cognitive benefits.
 
 <br>
 
@@ -129,15 +130,42 @@ The reward loop is broken. Intentional use is preserved.
 
 ## How Swock is different
 
-| Approach | What it does | What it doesn't do | Side effects |
-|:---------|:-------------|:-------------------|:-------------|
-| **Screen time apps** | Track usage, send reminders | Actually stop the behaviour | Nagging; easily dismissed |
-| **App blockers** | Block the entire app | Allow any use of the app | All-or-nothing; you just switch to another app |
-| **Willpower** | Rely on self-control | Provide structural friction | Fails under stress, fatigue, boredom |
-| **Swock** | Blocks the swipe gesture only | Block the app, video, or any feature | None — the app is fully usable minus one gesture |
+Most digital wellbeing tools take an **all-or-nothing** approach: they block entire apps, set time
+limits, or add friction before you open an app. Swock is the only app that targets the **specific
+gesture** driving the compulsion — the swipe-to-next-video — while leaving the app fully usable.
 
-Swock is the only approach that targets the **specific mechanic** driving the compulsion, without
-removing access to the app itself.
+| App | Mechanism | What it blocks | Gesture-level? | Platform | Root/VPN? |
+|:----|:----------|:---------------|:---------------|:---------|:----------|
+| **Swock** | AccessibilityService | Swipe-to-next-video gesture only | **Yes** | Android 13+ | No root, no VPN |
+| **Opal** | Screen Time API / AccessibilityService | Entire apps (block lists, schedules, sessions) | No | iOS, macOS, Android | No |
+| **One Sec** | Shortcuts Automation / AccessibilityService | App opening (adds breathing delay before app opens) | No | iOS, Android, browser | No |
+| **AppBlock** | Screen Time API / AccessibilityService | Entire apps; some in-app sections (Reels/Shorts) on Android | No (section-level on Android) | iOS, Android, browser | No |
+| **Freedom** | Local VPN | Entire apps + websites (network-level blocking) | No | Mac, Windows, iOS, Android, Chrome | Local VPN |
+| **Digital Wellbeing** | Built-in Android | App timers (pauses app after time limit) | No | Android | No |
+
+### Why gesture-level blocking matters
+
+App blockers and screen time tools address **how long** or **whether** you use an app. Swock
+addresses **how** you use it. The research is clear: the swipe gesture itself — not the content, not
+the app, not the time spent — is what drives the compulsive loop ([Luo et al., 2025](https://doi.org/10.3390/bs15081070);
+[Ma & Jiang, 2024](https://doi.org/10.5817/CP2024-3-1)).
+
+- **App blockers** (Opal, AppBlock, Freedom) remove access entirely. You can't open TikTok at all.
+  But users compensate by switching to another app or finding workarounds — the compulsive behaviour
+  migrates, it doesn't resolve.
+- **One Sec** adds a breathing exercise before you open an app. This creates friction at the point
+  of *opening*, but once you're in, the swipe loop runs uninterrupted.
+- **Digital Wellbeing** sets time limits. When the timer runs out, the app pauses. But until then,
+  the swipe loop runs at full speed — and a 30-minute session of compulsive swiping has already
+  impaired cognitive flexibility ([Luo et al., 2025](https://doi.org/10.3390/bs15081070)).
+- **AppBlock** on Android can block specific sections (Reels, Shorts) inside apps — the closest
+  competitor to Swock. But it blocks the *section*, not the *gesture*. You still can't use Reels at
+  all, even to watch a single video intentionally.
+
+**Swock is different.** You open TikTok. You watch the video in front of you. You can like, comment,
+share, pause. The app is fully functional. The only thing you can't do is swipe to the next video.
+The reward loop is broken at the exact point of compulsion — not at the app level, not at the time
+level, but at the gesture level.
 
 ---
 
@@ -213,6 +241,25 @@ Integrity API), which sends a random nonce and package name to Google. See the
 ---
 
 ## FAQ
+
+<details>
+<summary><b>How is Swock different from app blockers like Opal, AppBlock, or Freedom?</b></summary>
+<br>
+
+App blockers (Opal, AppBlock, Freedom) block entire apps — you can't open TikTok at all during a
+block session. This is an all-or-nothing approach: either you have full access or no access. Users
+often compensate by switching to another app, so the compulsive behaviour migrates rather than
+resolves.
+
+Swock blocks a single gesture — the swipe-to-next-video — while leaving the app fully functional.
+You can open TikTok, watch the video in front of you, like, comment, and share. You just can't
+swipe to the next video. The reward loop is broken at the gesture level, not the app level.
+
+One Sec is closer in spirit — it adds friction (a breathing exercise) before you open an app. But
+once you're in, the swipe loop runs uninterrupted. Swock adds friction *inside* the app, at the
+exact point where the compulsion operates.
+
+</details>
 
 <details>
 <summary><b>Does Swock block the app itself?</b></summary>
@@ -304,7 +351,11 @@ Journalists, reviewers, and content creators — see the **[Press Kit](PRESS.md)
 ## Research
 
 Short-form video use is associated with measurable cognitive and mental health costs. The
-following peer-reviewed studies informed Swock's design:
+following peer-reviewed studies informed Swock's design. **None of these studies tested Swock
+itself** — they establish the problem, the mechanism (the swipe gesture, not the content), and the
+general principle that reducing digital access can help.
+
+### The problem: short-form video use is associated with cognitive and mental health costs
 
 1. **Nguyen, L., et al. (2025)**. "Feeds, feelings, and focus: A systematic review and
    meta-analysis examining the cognitive and mental health correlates of short-form video use."
@@ -314,11 +365,65 @@ following peer-reviewed studies informed Swock's design:
    with stress (r = -.34) and anxiety (r = -.33) showing the strongest associations.
    [DOI: 10.1037/bul0000498](https://doi.org/10.1037/bul0000498)
 
-2. **Castelo, N., et al. (2025)**. "Blocking mobile internet on smartphones improves sustained
+### The mechanism: the swipe gesture itself — not the content — drives the compulsion
+
+2. **Luo, W., et al. (2025)**. "Swiping disrupts switching: Preliminary evidence for reduced
+   cue-based preparation following short-form video exposure." *Behavioral Sciences*, 15(8),
+   1070. A randomized experiment (N = 72) found that 30 minutes of TikTok-style swiping
+   selectively disrupted proactive cognitive flexibility — the ability to prepare for upcoming
+   tasks. The documentary control group (same content duration, no swiping) showed no deficit.
+   The authors summarize this as "swiping disrupts switching": the gesture itself impairs
+   goal-directed cognitive control.
+   [DOI: 10.3390/bs15081070](https://doi.org/10.3390/bs15081070)
+
+3. **Ma, L., & Jiang, Q. (2024)**. "Swiping more, thinking less: Using TikTok hinders analytic
+   thinking." *Cyberpsychology*, 18(3), Article 1. Two experiments found that **the process of
+   swiping through short video feeds — rather than the video content itself — negatively
+   influenced users' propensity to think analytically**. Swiping shifts users toward fast,
+   automatic processing (Type 1) at the expense of deliberate analytic reasoning (Type 2).
+   [DOI: 10.5817/CP2024-3-1](https://doi.org/10.5817/CP2024-3-1)
+
+4. **Park, J., & Jung, Y. (2024)**. "Unveiling the dynamics of binge-scrolling: A comprehensive
+   analysis of short-form video consumption using a Stimulus-Organism-Response model."
+   *Telematics and Informatics*, 95, 102200. A mixed-method study found that the **infinite
+   scrolling feature** — not content quality — drives perceived loss of self-control in
+   short-form video users. The scrolling interaction itself mediates the relationship between
+   platform design and negative outcomes.
+   [DOI: 10.1016/j.tele.2024.102200](https://doi.org/10.1016/j.tele.2024.102200)
+
+5. **Clark, L., & Zack, M. (2023)**. "Engineered highs: Reward variability and frequency as
+   potential prerequisites of behavioural addiction." *Addictive Behaviors*, 140, 107626. Shows
+   that infinite scroll and personalised recommendations introduce **novel forms of reward
+   variability** — the same variable-ratio reinforcement schedule that drives gambling
+   addiction. The swipe-to-next-video mechanic is the delivery mechanism for this variability.
+   [DOI: 10.1016/j.addbeh.2023.107626](https://doi.org/10.1016/j.addbeh.2023.107626)
+
+### Evidence that friction and limiting swipes can help
+
+6. **Ruiz, N., et al. (2024)**. "Design frictions on social media: Balancing reduced mindless
+   scrolling and user satisfaction." *Proceedings of Mensch und Computer 2024*, 442–447. A study
+   (N = 30) compared infinite scroll with an interface that added **friction** — requiring users
+   to react to each post before accessing the next. The friction interface produced
+   **significantly better content recall** and reduced mindless scrolling. This directly
+   supports Swock's approach of adding friction at the gesture level.
+   [DOI: 10.1145/3670653.3677495](https://doi.org/10.1145/3670653.3677495)
+
+7. **Barton, N., & Smyth, M. (2025)**. "Context-switching in short-form videos: What is the
+   impact on prospective memory?" *Memory*, 33(7), 788–801. A between-groups experiment
+   (N = 45) found that **unlimited context-switching** (free swiping between videos) **degraded
+   prospective memory**, while **limited context-switching improved it**. Limiting the ability
+   to swipe to the next video has a measurable cognitive benefit.
+   [DOI: 10.1080/09658211.2025.2521076](https://doi.org/10.1080/09658211.2025.2521076)
+
+### Evidence that reducing access can help
+
+8. **Castelo, N., et al. (2025)**. "Blocking mobile internet on smartphones improves sustained
    attention, mental health, and subjective well-being." *PNAS Nexus*, 4(2), pgaf017. A
-   randomized controlled trial found that 2 weeks of blocking mobile internet on smartphones
-   improved sustained attention, mental health, and well-being; 91% of participants improved on
-   at least one outcome.
+   randomized controlled trial found that 2 weeks of blocking **all mobile internet** on
+   smartphones improved sustained attention, mental health, and well-being; 91% of participants
+   improved on at least one outcome. This was a blanket internet block, not a targeted
+   swipe-blocking intervention — but it demonstrates that reducing digital access can produce
+   measurable cognitive benefits.
    [DOI: 10.1093/pnasnexus/pgaf017](https://doi.org/10.1093/pnasnexus/pgaf017)
 
 ---
