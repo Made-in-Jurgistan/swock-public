@@ -150,17 +150,17 @@ addresses **how** you use it. The research is clear: the swipe gesture itself �
 the app, not the time spent — is what drives the compulsive loop ([Luo et al., 2025](https://doi.org/10.3390/bs15081070);
 [Ma & Jiang, 2024](https://doi.org/10.5817/CP2024-3-1)).
 
-- **App blockers** (Opal, AppBlock, Freedom) remove access entirely. You can't open TikTok at all.
-  But users compensate by switching to another app or finding workarounds — the compulsive behaviour
+- **App blockers** (Opal, Freedom) remove access entirely. You can't open TikTok at all. But users
+  compensate by switching to another app or finding workarounds — the compulsive behaviour
   migrates, it doesn't resolve.
 - **One Sec** adds a breathing exercise before you open an app. This creates friction at the point
   of *opening*, but once you're in, the swipe loop runs uninterrupted.
 - **Digital Wellbeing** sets time limits. When the timer runs out, the app pauses. But until then,
   the swipe loop runs at full speed — and a 30-minute session of compulsive swiping has already
   impaired cognitive flexibility ([Luo et al., 2025](https://doi.org/10.3390/bs15081070)).
-- **AppBlock** on Android can block specific sections (Reels, Shorts) inside apps — the closest
-  competitor to Swock. But it blocks the *section*, not the *gesture*. You still can't use Reels at
-  all, even to watch a single video intentionally.
+- **AppBlock** on Android is the closest competitor: it can block specific sections (Reels, Shorts)
+  inside apps. But it blocks the *section*, not the *gesture*. You still can't use Reels at all,
+  even to watch a single video intentionally.
 
 **Swock is different.** You open TikTok. You watch the video in front of you. You can like, comment,
 share, pause. The app is fully functional. The only thing you can't do is swipe to the next video.
@@ -235,8 +235,8 @@ Download Swock from the [Google Play Store](https://play.google.com/store/apps/d
 | Open privacy policy | Read the full [Privacy Policy](privacy-policy.md) |
 
 The only network activity is through Google Play Services for app integrity verification (Play
-Integrity API), which sends a random nonce and package name to Google. See the
-[Privacy Policy](privacy-policy.md) for full details.
+Integrity API), which sends a random nonce, package name, and device integrity signals to Google.
+See the [Privacy Policy](privacy-policy.md) for full details.
 
 ---
 

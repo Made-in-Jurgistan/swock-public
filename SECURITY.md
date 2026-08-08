@@ -29,7 +29,8 @@
 
 > **Do not open a public GitHub issue for security vulnerabilities.**
 
-Instead, email the maintainer directly with:
+Use [GitHub's private vulnerability reporting](https://github.com/Made-in-Jurgistan/swock-public/security/advisories/new)
+to submit a report privately. Include:
 
 - A description of the vulnerability
 - Steps to reproduce or a proof of concept

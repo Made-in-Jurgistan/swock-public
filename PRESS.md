@@ -86,13 +86,13 @@ slot machine behaviour. This is not a side effect; it is the core engagement mec
 Existing solutions fall short. **Screen time tools** like Digital Wellbeing set time limits, but
 until the timer expires, the swipe loop runs at full speed — and 30 minutes of compulsive swiping
 has already impaired cognitive flexibility ([Luo et al., 2025](https://doi.org/10.3390/bs15081070)).
-**App blockers** like Opal, AppBlock, and Freedom remove access to the app entirely — you can't
-open TikTok at all during a block session. This all-or-nothing approach leads to substitution
-(switching to another app) rather than behaviour change. **One Sec** adds a breathing exercise
-before you open an app, creating friction at the point of *opening* — but once you're in, the swipe
-loop runs uninterrupted. **AppBlock** on Android can block specific sections (Reels, Shorts) inside
-apps, the closest competitor to Swock — but it blocks the *section*, not the *gesture*. You still
-can't use Reels at all, even to watch a single video intentionally.
+**App blockers** like Opal and Freedom remove access to the app entirely — you can't open TikTok at
+all during a block session. This all-or-nothing approach leads to substitution (switching to
+another app) rather than behaviour change. **One Sec** adds a breathing exercise before you open an
+app, creating friction at the point of *opening* — but once you're in, the swipe loop runs
+uninterrupted. **AppBlock** on Android is the closest competitor: it can block specific sections
+(Reels, Shorts) inside apps. But it blocks the *section*, not the *gesture* — you still can't use
+Reels at all, even to watch a single video intentionally.
 
 Swock takes a different approach: **friction at the exact point of compulsion**. It uses Android's
 accessibility service framework to detect when a user is on a short-video feed and intercept the

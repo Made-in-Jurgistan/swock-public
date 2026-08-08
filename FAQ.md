@@ -91,8 +91,9 @@ crash reporting. Everything runs locally on your device. See the
 <summary><b>Does Swock send data to any server?</b></summary>
 
 No. Swock does not communicate with any server. The only network activity is through Google Play
-Services for app integrity verification (Play Integrity API), which sends a random nonce and
-package name to Google. See the [Privacy Policy](privacy-policy.md) for details.
+Services for app integrity verification (Play Integrity API), which sends a random nonce, package
+name, and device integrity signals to Google. See the [Privacy Policy](privacy-policy.md) for
+details.
 
 </details>
 
@@ -334,21 +335,39 @@ has no internet access, the risk is minimal.
 ## Comparison & alternatives
 
 <details>
-<summary><b>How is Swock different from screen time apps?</b></summary>
+<summary><b>How is Swock different from screen time apps like Digital Wellbeing?</b></summary>
 
-Screen time apps track your usage and send reminders or limits. They don't actually stop the
-behaviour — they just tell you about it. Swock physically prevents the swipe gesture, adding
-real-time friction at the moment of compulsion.
+Screen time tools like Google's Digital Wellbeing set daily app timers — when the timer runs out,
+the app is paused. But until then, the swipe loop runs at full speed, and 30 minutes of compulsive
+swiping has already impaired cognitive flexibility. Swock doesn't limit *how long* you use an app —
+it blocks the specific gesture driving the compulsion, in real time.
 
 </details>
 
 <details>
-<summary><b>How is Swock different from app blockers?</b></summary>
+<summary><b>How is Swock different from app blockers like Opal, AppBlock, or Freedom?</b></summary>
 
-App blockers prevent you from opening the app entirely. This is all-or-nothing — you can't watch
-even one video. Swock lets you use the app normally except for the one gesture that drives the
-compulsion. You can still open TikTok, watch a video, like it, and comment. You just can't swipe
-to the next one.
+App blockers (Opal, AppBlock, Freedom) block entire apps — you can't open TikTok at all during a
+block session. This is all-or-nothing: either full access or no access. Users often compensate by
+switching to another app, so the compulsive behaviour migrates rather than resolves.
+
+Swock blocks a single gesture — the swipe-to-next-video — while leaving the app fully functional.
+You can open TikTok, watch the video in front of you, like, comment, and share. You just can't
+swipe to the next video.
+
+AppBlock on Android can block specific sections (Reels, Shorts) inside apps — the closest
+competitor to Swock. But it blocks the *section*, not the *gesture*. You still can't use Reels at
+all, even to watch a single video intentionally.
+
+</details>
+
+<details>
+<summary><b>How is Swock different from One Sec?</b></summary>
+
+One Sec adds a breathing exercise or mindful task before you open a distracting app, creating
+friction at the point of *opening*. But once you're inside the app, the swipe loop runs
+uninterrupted. Swock adds friction *inside* the app, at the exact gesture where the compulsion
+operates — the swipe to the next video.
 
 </details>
 
