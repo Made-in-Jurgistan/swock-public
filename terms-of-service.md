@@ -115,7 +115,7 @@ be resolved in the courts of that jurisdiction.
 ## Contact
 
 For questions about these Terms, contact the maintainer via
-[GitHub](https://github.com/Made-in-Jurgistan).
+[GitHub](https://github.com/Made-in-Jurgistan/swock-public/issues).
 
 ---
 

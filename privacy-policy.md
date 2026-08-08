@@ -139,7 +139,7 @@ constitutes acceptance of the revised policy.
 ## Contact
 
 For privacy questions or concerns, contact the maintainer via
-[GitHub](https://github.com/Made-in-Jurgistan).
+[GitHub](https://github.com/Made-in-Jurgistan/swock-public/issues).
 
 ---
 
