@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="swock_logo.png" width="80" alt="Swock">
+<img src="swock_logo.png" width="100" alt="Swock">
 
 # Terms of Service
 
@@ -33,11 +33,15 @@
 By installing, accessing, or using Swock ("the App"), you agree to be bound by these Terms of
 Service ("the Terms"). If you do not agree to these Terms, do not install or use the App.
 
+---
+
 ## License
 
 The App is proprietary software. All rights are reserved by the copyright holder. No license is
 granted to use, copy, modify, distribute, or reverse engineer the App beyond the limited right
 to install and run the App on your personal device for personal, non-commercial use.
+
+---
 
 ## Use of the app
 
@@ -53,6 +57,8 @@ The App is a digital wellbeing tool that adds friction to compulsive scrolling b
 not a security tool, a parental control tool, or a guarantee against accessing short-form video
 content.
 
+---
+
 ## Accessibility service
 
 The App uses the Android Accessibility Service to intercept touch gestures. By enabling the
@@ -65,11 +71,15 @@ accessibility service, you acknowledge that:
 
 See the [Privacy Policy](privacy-policy.md) for full details on data handling.
 
+---
+
 ## Intellectual property
 
 The App, including all source code, assets, branding, logos, and documentation, is the exclusive
 property of the copyright holder. "Swock", the Swock logo, and "Made in Jurgistan" are
 trademarks of the copyright holder.
+
+---
 
 ## Disclaimer of warranties
 
@@ -84,6 +94,8 @@ holder does not warrant that:
 The App is designed to add friction to compulsive scrolling. It is not a medical device, a
 treatment for addiction, or a substitute for professional help.
 
+---
+
 ## Limitation of liability
 
 IN NO EVENT SHALL THE COPYRIGHT HOLDER BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL,
@@ -96,10 +108,14 @@ CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING BUT NOT LIMITED TO:
 
 Your use of the App is at your sole discretion and risk.
 
+---
+
 ## Termination
 
 These Terms terminate automatically if you uninstall the App. The copyright holder may terminate
 your right to use the App at any time for violation of these Terms.
+
+---
 
 ## Changes to terms
 
@@ -107,10 +123,14 @@ The copyright holder may update these Terms from time to time. Changes will be p
 document with an updated "Last updated" date. Continued use of the App after changes
 constitutes acceptance of the revised Terms.
 
+---
+
 ## Governing law
 
 These Terms are governed by the laws of the copyright holder's jurisdiction. Any disputes shall
 be resolved in the courts of that jurisdiction.
+
+---
 
 ## Contact
 
@@ -121,6 +141,6 @@ For questions about these Terms, contact the maintainer via
 
 <div align="center">
 
-<sub>(c) 2026 Made in Jurgistan. All rights reserved.</sub>
+<sub>© 2026 Made in Jurgistan. All rights reserved.</sub>
 
 </div>

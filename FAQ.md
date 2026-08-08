@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="swock_logo.png" width="80" alt="Swock">
+<img src="swock_logo.png" width="100" alt="Swock">
 
 # FAQ — Frequently Asked Questions
 
@@ -8,58 +8,150 @@
 
 ---
 
+## Contents
+
+- [General](#general)
+- [Privacy & data](#privacy--data)
+- [Usage](#usage)
+- [Technical](#technical)
+- [Supported apps](#supported-apps)
+- [Accessibility service](#accessibility-service)
+- [Comparison & alternatives](#comparison--alternatives)
+
+---
+
 ## General
 
-### What is Swock?
+<details>
+<summary><b>What is Swock?</b></summary>
 
-Swock is an Android app that blocks the swipe-to-next-video gesture in short-form video apps
-like TikTok, YouTube Shorts, and Instagram Reels. It doesn't block the apps themselves — it
-blocks the specific gesture that drives the compulsive scroll loop.
+Swock is an Android app that blocks the swipe-to-next-video gesture in short-form video apps like
+TikTok, YouTube Shorts, and Instagram Reels. It doesn't block the apps themselves — it blocks the
+specific gesture that drives the compulsive scroll loop.
 
-### How does Swock work?
+</details>
 
-Swock uses Android's accessibility service framework to detect when you're on a Shorts/Reels feed
-and intercept the vertical swipe gesture. When you try to swipe to the next video, nothing
-happens. Everything else — tapping, liking, commenting, sharing, horizontal navigation — works
-normally.
+<details>
+<summary><b>Why is it called Swock?</b></summary>
 
-### Is Swock open source?
+Swock is a portmanteau of "swipe" and "block" — it blocks swipes. The name is short, memorable,
+and describes exactly what the app does.
+
+</details>
+
+<details>
+<summary><b>Who is Swock for?</b></summary>
+
+Swock is for anyone who finds themselves scrolling short-form video apps more than they want to.
+You don't need to be clinically addicted to benefit — if you've ever lost an hour to TikTok when
+you meant to spend five minutes, Swock is for you.
+
+</details>
+
+<details>
+<summary><b>Is Swock open source?</b></summary>
 
 No. Swock is proprietary software. The source code is not publicly available. This repository
-contains only public-facing documentation.
+contains only public-facing documentation — privacy policy, terms of service, FAQ, and support
+information. The app's privacy practices are fully documented, and the fact that it declares no
+INTERNET permission can be verified by anyone who inspects the APK.
 
-## Privacy
+</details>
 
-### Does Swock collect my data?
+<details>
+<summary><b>Is Swock a medical treatment for addiction?</b></summary>
 
-No. Swock collects zero data. There is no INTERNET permission, no analytics, no telemetry, and
-no crash reporting. Everything runs locally on your device.
+No. Swock is a digital wellbeing tool that adds friction to compulsive scrolling. It is not a
+medical device, a treatment for addiction, or a substitute for professional help. If you're
+struggling with compulsive social media use, consider speaking with a mental health professional.
 
-### Does Swock send data to any server?
+</details>
+
+<details>
+<summary><b>How much does Swock cost?</b></summary>
+
+Swock is free. No ads, no in-app purchases, no subscription.
+
+</details>
+
+---
+
+## Privacy & data
+
+<details>
+<summary><b>Does Swock collect my data?</b></summary>
+
+No. Swock collects zero data. There is no INTERNET permission, no analytics, no telemetry, and no
+crash reporting. Everything runs locally on your device. See the
+[Privacy Policy](privacy-policy.md) for full details.
+
+</details>
+
+<details>
+<summary><b>Does Swock send data to any server?</b></summary>
 
 No. Swock does not communicate with any server. The only network activity is through Google Play
 Services for app integrity verification (Play Integrity API), which sends a random nonce and
 package name to Google. See the [Privacy Policy](privacy-policy.md) for details.
 
-### What does the accessibility service see?
+</details>
+
+<details>
+<summary><b>What does the accessibility service see?</b></summary>
 
 The accessibility service inspects the screen structure of supported apps to determine whether
 you're on a Shorts/Reels feed. It does not read, log, store, or transmit text content,
 credentials, or personal data. The inspection is discarded immediately after classification.
 
+</details>
+
+<details>
+<summary><b>Does Swock sell or share my data?</b></summary>
+
+No. Swock has no data to sell or share. It collects nothing.
+
+</details>
+
+<details>
+<summary><b>Where are my settings stored?</b></summary>
+
+All preferences are stored locally on your device in app-private storage. They never leave your
+device.
+
+</details>
+
+<details>
+<summary><b>Can I verify that Swock doesn't collect data?</b></summary>
+
+Yes. Swock declares no INTERNET permission, which can be verified by inspecting the APK's manifest
+using tools like `aapt dump permissions` or any APK analyser. Without the INTERNET permission, the
+app cannot make network connections (except through Google Play Services for integrity
+verification, which is handled by the Play Services process, not Swock itself).
+
+</details>
+
+---
+
 ## Usage
 
-### Can I still watch videos?
+<details>
+<summary><b>Can I still watch videos?</b></summary>
 
 Yes. The current video is fully visible and playable. You can tap to pause, like, comment, and
 share. Only the swipe-to-next gesture is blocked.
 
-### Can I still navigate within the app?
+</details>
+
+<details>
+<summary><b>Can I still navigate within the app?</b></summary>
 
 Yes. Horizontal swipes (tab navigation), taps, long-press, and edge gestures all pass through
 normally. You can search, browse profiles, and use all non-feed features of the app.
 
-### What if I want to swipe to the next video?
+</details>
+
+<details>
+<summary><b>What if I want to swipe to the next video?</b></summary>
 
 You can:
 1. Toggle **Swipe Blocking** off in the Swock app
@@ -67,59 +159,221 @@ You can:
 3. Toggle off the specific app in Swock's Protected Apps list
 
 Swock is designed to add friction, not to be unbreakable. The goal is to make the swipe a
-conscious choice rather than a reflex.
+conscious choice rather than a reflex. If you deliberately decide to swipe, that's a success.
 
-### Does Swock work in multi-window mode?
+</details>
+
+<details>
+<summary><b>Does Swock work in multi-window mode?</b></summary>
 
 Swock only activates in the active/focused window pane in split-screen mode.
 
-### Does Swock work with TalkBack?
+</details>
+
+<details>
+<summary><b>Does Swock work with TalkBack?</b></summary>
 
 Swock is compatible with TalkBack. If you experience any issues, please
 [report them](https://github.com/Made-in-Jurgistan/swock-public/issues).
 
+</details>
+
+<details>
+<summary><b>How do I know Swock is active?</b></summary>
+
+A small shield indicator badge appears at the top of the screen when Swock is actively blocking
+swipes on a Shorts/Reels feed. When you leave the feed or close the app, the indicator disappears
+automatically.
+
+</details>
+
+<details>
+<summary><b>Can I disable Swock for specific apps?</b></summary>
+
+Yes. In Swock's settings, toggle individual apps on or off under **Protected Apps**.
+
+</details>
+
+<details>
+<summary><b>What happens if I uninstall Swock?</b></summary>
+
+The accessibility service is removed, and all blocking stops immediately. Your preferences are
+deleted with the app. No data remains anywhere because Swock never collected any.
+
+</details>
+
+---
+
 ## Technical
 
-### Why does Swock need Android 13+?
+<details>
+<summary><b>Why does Swock need Android 13+?</b></summary>
 
 Swock uses a touch interception API introduced in Android 13 (API 33). There is no fallback for
 older Android versions.
 
-### Does Swock require root?
+</details>
+
+<details>
+<summary><b>Does Swock require root?</b></summary>
 
 No. Swock uses Android's built-in accessibility service framework. No root, no VPN, no special
 permissions beyond the accessibility service.
 
-### Does Swock drain my battery?
+</details>
 
-Swock only activates when a supported app is in the foreground and you're on a Shorts/Reels
+<details>
+<summary><b>Does Swock drain my battery?</b></summary>
+
+No. Swock only activates when a supported app is in the foreground and you're on a Shorts/Reels
 feed. When you're using any other app, Swock is idle and uses negligible resources.
 
-### Will Swock work after app updates?
+</details>
+
+<details>
+<summary><b>Will Swock work after app updates?</b></summary>
 
 Swock operates at the touch gesture level, not the view hierarchy level, so touch interception
 continues to work even when apps update their UI. Screen detection may occasionally need updates
 if apps significantly change their interface — these are handled in Swock updates.
 
+</details>
+
+<details>
+<summary><b>Does Swock work on emulators?</b></summary>
+
+Touch interception requires a physical Android 13+ device. Emulators do not reliably support the
+touch interception API that Swock uses.
+
+</details>
+
+<details>
+<summary><b>Is the APK available for sideloading?</b></summary>
+
+Yes. Swock can be sideloaded. Download the APK and install it with `adb install swock.apk`. Enable
+the accessibility service after installation.
+
+</details>
+
+---
+
 ## Supported apps
 
-### Which apps are supported?
+<details>
+<summary><b>Which apps are supported?</b></summary>
 
-See the [README](README.md#supported-apps) for the full list.
+See the [README](README.md#supported-apps) for the full list. Swock supports 14 apps and variants
+including TikTok, YouTube, Instagram, Snapchat, Facebook, Reddit, Twitch, Xiaohongshu, and Kwai.
 
-### Can I request support for a new app?
+</details>
+
+<details>
+<summary><b>Can I request support for a new app?</b></summary>
 
 Yes. [Open an issue](https://github.com/Made-in-Jurgistan/swock-public/issues) with the app name
 and package name. We'll evaluate whether detection is feasible.
 
-### Can I disable Swock for specific apps?
+</details>
 
-Yes. In Swock's settings, toggle individual apps on or off under **Protected Apps**.
+<details>
+<summary><b>Why isn't [app X] supported?</b></summary>
+
+Some apps don't have a clear enough screen structure to reliably detect when the user is on a
+short-video feed. If an app's Shorts/Reels feed can't be distinguished from its other screens,
+Swock can't target it without blocking swipes everywhere in the app, which would defeat the
+purpose. [Request it](https://github.com/Made-in-Jurgistan/swock-public/issues) and we'll
+investigate.
+
+</details>
+
+---
+
+## Accessibility service
+
+<details>
+<summary><b>Why does Swock need the accessibility service?</b></summary>
+
+The accessibility service is the only Android framework that allows intercepting touch gestures at
+the system level without root. Swock uses it to detect when you're on a Shorts/Reels feed and to
+block the vertical swipe gesture.
+
+</details>
+
+<details>
+<summary><b>Is it safe to give Swock the accessibility permission?</b></summary>
+
+Yes. The accessibility service is a powerful permission, but Swock uses it for a narrow purpose:
+detecting Shorts/Reels feeds and intercepting the vertical swipe gesture. Swock has no INTERNET
+permission, so even if it could read screen content (which it doesn't store or transmit), it
+couldn't send it anywhere.
+
+</details>
+
+<details>
+<summary><b>Can Swock read my passwords or personal information?</b></summary>
+
+The accessibility service technically has access to screen content, but Swock only uses it to
+classify whether the current screen is a Shorts/Reels feed. It does not read, log, store, or
+transmit text content, credentials, or personal data. And since Swock has no INTERNET permission,
+it couldn't transmit anything even if it wanted to.
+
+</details>
+
+<details>
+<summary><b>Android says Swock has full access to my screen. Is that dangerous?</b></summary>
+
+Android displays this warning for all accessibility services because the framework is powerful.
+The warning is generic — it doesn't mean Swock actually reads your screen content. Swock uses the
+service only for screen classification and gesture interception. Combined with the fact that Swock
+has no internet access, the risk is minimal.
+
+</details>
+
+---
+
+## Comparison & alternatives
+
+<details>
+<summary><b>How is Swock different from screen time apps?</b></summary>
+
+Screen time apps track your usage and send reminders or limits. They don't actually stop the
+behaviour — they just tell you about it. Swock physically prevents the swipe gesture, adding
+real-time friction at the moment of compulsion.
+
+</details>
+
+<details>
+<summary><b>How is Swock different from app blockers?</b></summary>
+
+App blockers prevent you from opening the app entirely. This is all-or-nothing — you can't watch
+even one video. Swock lets you use the app normally except for the one gesture that drives the
+compulsion. You can still open TikTok, watch a video, like it, and comment. You just can't swipe
+to the next one.
+
+</details>
+
+<details>
+<summary><b>How is Swock different from just using willpower?</b></summary>
+
+Willpower fails under stress, fatigue, and boredom — exactly the states where compulsive scrolling
+is strongest. Swock provides structural friction that doesn't depend on willpower. You don't have
+to decide not to swipe; Swock makes the swipe impossible. If you want to swipe, you have to
+consciously disable Swock first, which breaks the automatic loop.
+
+</details>
+
+<details>
+<summary><b>Can I use Swock alongside other digital wellbeing tools?</b></summary>
+
+Yes. Swock is compatible with screen time apps, app blockers, and other wellbeing tools. Swock
+complements them by adding gesture-level friction that other tools don't provide.
+
+</details>
 
 ---
 
 <div align="center">
 
-<sub>(c) 2026 Made in Jurgistan. All rights reserved.</sub>
+<sub>© 2026 Made in Jurgistan. All rights reserved.</sub>
 
 </div>
