@@ -1,10 +1,10 @@
 <div align="center">
 
-<img src="swock_logo.png" width="100" alt="Swock">
+<img src="swock_logo.png" width="64" alt="Swock app logo — shield icon">
+<br>
+<img src="swock_wordmark.jpg" width="280" alt="Swock wordmark">
 
 # Terms of Service
-
-**Swock — Swipe Blocker for Short Videos**
 
 **Last updated: 2026-08-08**
 

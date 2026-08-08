@@ -1,6 +1,8 @@
 <div align="center">
 
-<img src="swock_logo.png" width="100" alt="Swock">
+<img src="swock_logo.png" width="64" alt="Swock app logo — shield icon">
+<br>
+<img src="swock_wordmark.jpg" width="280" alt="Swock wordmark">
 
 # Support & Troubleshooting
 
@@ -73,6 +75,18 @@ If the toggle keeps turning off:
 - Set battery optimisation to **Unrestricted**
 - Some manufacturers (Xiaomi, Oppo, Vivo) aggressively kill background services — check their
   specific battery saver settings
+
+### Sideloading installation issues
+
+If you installed Swock from a [GitHub Release](https://github.com/Made-in-Jurgistan/swock-public/releases)
+APK instead of the Play Store:
+
+- **"App not installed"** — Your device may block unknown-source installs. Go to
+  **Settings → Apps → Special access → Install unknown apps** and allow your file manager or browser.
+- **Signature mismatch** — If you previously installed a different build (e.g., Play Store version),
+  uninstall it first. Android rejects signature mismatches between builds.
+- **"Play Protect blocked install"** — Tap **Install anyway**. Play Protect warns about all
+  sideloaded APKs, not just malicious ones.
 
 ---
 

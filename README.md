@@ -1,8 +1,8 @@
 <div align="center">
 
-<img src="swock_logo.png" width="120" alt="Swock">
-
-# Swock
+<img src="swock_logo.png" width="96" alt="Swock app logo — shield icon">
+<br>
+<img src="swock_wordmark.jpg" width="360" alt="Swock wordmark">
 
 ### Break the scroll loop.
 
@@ -20,7 +20,7 @@ Videos stay fully visible and playable — only the compulsive swipe is intercep
 
 <br>
 
-**[Download on Google Play](https://play.google.com/store/apps/details?id=com.swock)** &nbsp;·&nbsp; [Report an issue](https://github.com/Made-in-Jurgistan/swock-public/issues) &nbsp;·&nbsp; [Read the FAQ](FAQ.md) &nbsp;·&nbsp; [Press kit](PRESS.md)
+**[Download on Google Play](https://play.google.com/store/apps/details?id=com.swock)** &nbsp;·&nbsp; [Sideload APK](https://github.com/Made-in-Jurgistan/swock-public/releases) &nbsp;·&nbsp; [Report an issue](https://github.com/Made-in-Jurgistan/swock-public/issues) &nbsp;·&nbsp; [Read the FAQ](FAQ.md) &nbsp;·&nbsp; [Press kit](PRESS.md)
 
 </div>
 
@@ -194,7 +194,18 @@ Individual apps can be toggled on or off in the settings. To request support for
 
 ### 1. Install
 
-Download Swock from the [Google Play Store](https://play.google.com/store/apps/details?id=com.swock).
+**Option A — Google Play Store** (when published):
+Download from the [Play Store](https://play.google.com/store/apps/details?id=com.swock).
+
+**Option B — Sideloading** (test builds):
+Download the latest APK from [GitHub Releases](https://github.com/Made-in-Jurgistan/swock-public/releases)
+and install it on your device:
+
+```bash
+adb install swock-v1.0.0-debug.apk
+```
+
+Enable unknown-source installs if prompted.
 
 ### 2. Enable
 
@@ -355,6 +366,10 @@ following peer-reviewed studies informed Swock's design. **None of these studies
 itself** — they establish the problem, the mechanism (the swipe gesture, not the content), and the
 general principle that reducing digital access can help.
 
+<details>
+<summary><b>View all 8 citations</b></summary>
+<br>
+
 ### The problem: short-form video use is associated with cognitive and mental health costs
 
 1. **Nguyen, L., et al. (2025)**. "Feeds, feelings, and focus: A systematic review and
@@ -425,6 +440,8 @@ general principle that reducing digital access can help.
    swipe-blocking intervention — but it demonstrates that reducing digital access can produce
    measurable cognitive benefits.
    [DOI: 10.1093/pnasnexus/pgaf017](https://doi.org/10.1093/pnasnexus/pgaf017)
+
+</details>
 
 ---
 

@@ -1,10 +1,12 @@
 <div align="center">
 
-<img src="swock_logo.png" width="100" alt="Swock">
+<img src="swock_logo.png" width="64" alt="Swock app logo — shield icon">
+<br>
+<img src="swock_wordmark.jpg" width="280" alt="Swock wordmark">
 
 # Changelog
 
-**All notable changes to Swock are documented in this file.**
+**All notable changes are documented in this file.**
 
 </div>
 
@@ -19,6 +21,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- Debug APK published to [Releases](https://github.com/Made-in-Jurgistan/swock-public/releases) for sideload testing by test users
 - Play Integrity API integration for anti-repackaging verification
 - Release signing configuration for Google Play distribution
 - Stricter code obfuscation in release builds
