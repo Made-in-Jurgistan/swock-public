@@ -53,8 +53,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <div align="center">
 
-[Unreleased]: https://github.com/Made-in-Jurgistan/swock-public/compare/v1.0.0...HEAD
-[1.0.0]: https://github.com/Made-in-Jurgistan/swock-public/releases/tag/v1.0.0
+[Unreleased]: https://github.com/Made-in-Jurgistan/swock-public/commits/main
+[1.0.0]: https://github.com/Made-in-Jurgistan/swock-public
 
 </div>
 
