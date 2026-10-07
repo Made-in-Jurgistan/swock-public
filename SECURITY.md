@@ -48,11 +48,11 @@ Swock is designed with a minimal attack surface:
 
 | Principle | Detail |
 |:----------|:-------|
-| **No declared INTERNET permission** | No analytics, no telemetry, no ad SDKs. The Play Integrity API makes network calls via Google Play Services for integrity verification, but Swock itself declares no INTERNET permission. |
+| **No declared INTERNET permission** | No analytics, no telemetry, no ad SDKs, no Play Integrity client. Swock declares no INTERNET permission and cannot make network connections. |
 | **No data collection** | All processing is local. No user data leaves the device. See the [Privacy Policy](privacy-policy.md) for details. |
 | **No external storage** | Preferences are stored in app-private storage. |
 | **Accessibility service** | The service only inspects screen structure of target apps to classify screens and intercept the vertical swipe gesture. It does not read or transmit text, credentials, or personal data. |
-| **App integrity** | Play Integrity API verifies the app binary is unmodified and installed from Google Play. |
+| **App integrity** | Release builds are signed with a fixed key; verify the APK signature before sideloading. |
 | **Release signing** | Release builds are signed with a 2048-bit RSA key. |
 
 ---

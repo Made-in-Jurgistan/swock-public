@@ -20,7 +20,7 @@ Videos stay fully visible and playable — only the compulsive swipe is intercep
 
 <br>
 
-**[Download on Google Play](https://play.google.com/store/apps/details?id=com.swock)** &nbsp;·&nbsp; [Report an issue](https://github.com/Made-in-Jurgistan/swock-public/issues) &nbsp;·&nbsp; [Read the FAQ](FAQ.md) &nbsp;·&nbsp; [Press kit](PRESS.md)
+**[Download the APK](https://github.com/Made-in-Jurgistan/swock-public/releases)** &nbsp;·&nbsp; [Report an issue](https://github.com/Made-in-Jurgistan/swock-public/issues) &nbsp;·&nbsp; [Read the FAQ](FAQ.md) &nbsp;·&nbsp; [Press kit](PRESS.md)
 
 </div>
 
@@ -131,14 +131,14 @@ The reward loop is broken. Intentional use is preserved.
 ## How Swock is different
 
 Most digital wellbeing tools take an **all-or-nothing** approach: they block entire apps, set time
-limits, or add friction before you open an app. Swock is the only app that targets the **specific
+limits, or add friction before you open an app. Swock is, to our knowledge, the only app that targets the **specific
 gesture** driving the compulsion — the swipe-to-next-video — while leaving the app fully usable.
 
 | App | Mechanism | What it blocks | Gesture-level? | Platform | Root/VPN? |
 |:----|:----------|:---------------|:---------------|:---------|:----------|
 | **Swock** | AccessibilityService | Swipe-to-next-video gesture only | **Yes** | Android 13+ | No root, no VPN |
 | **Opal** | Screen Time API / AccessibilityService | Entire apps (block lists, schedules, sessions) | No | iOS, macOS, Android | No |
-| **One Sec** | Shortcuts Automation / AccessibilityService | App opening (adds breathing delay before app opens) | No | iOS, Android, browser | No |
+| **One Sec** | Shortcuts Automation / AccessibilityService | App opening (breathing delay); on Android also removes in-app Reels/Shorts sections | No (section-level on Android) | iOS, Android, browser | No |
 | **AppBlock** | Screen Time API / AccessibilityService | Entire apps; some in-app sections (Reels/Shorts) on Android | No (section-level on Android) | iOS, Android, browser | No |
 | **Freedom** | Local VPN | Entire apps + websites (network-level blocking) | No | Mac, Windows, iOS, Android, Chrome | Local VPN |
 | **Digital Wellbeing** | Built-in Android | App timers (pauses app after time limit) | No | Android | No |
@@ -154,7 +154,8 @@ the app, not the time spent — is what drives the compulsive loop ([Luo et al.,
   compensate by switching to another app or finding workarounds — the compulsive behaviour
   migrates, it doesn't resolve.
 - **One Sec** adds a breathing exercise before you open an app. This creates friction at the point
-  of *opening*, but once you're in, the swipe loop runs uninterrupted.
+  of *opening*, but once you're in, the swipe loop runs uninterrupted. (On Android it can also remove
+  whole Reels/Shorts sections — again the section, not the gesture.)
 - **Digital Wellbeing** sets time limits. When the timer runs out, the app pauses. But until then,
   the swipe loop runs at full speed — and a 30-minute session of compulsive swiping has already
   impaired cognitive flexibility ([Luo et al., 2025](https://doi.org/10.3390/bs15081070)).
@@ -175,13 +176,10 @@ level, but at the gesture level.
 
 | App | Feature | App | Feature |
 |:----|:--------|:----|:--------|
-| TikTok | For You / Following | Reddit | Video feed |
-| TikTok Lite | For You / Following | Twitch | Clips |
-| TikTok (Aweme) | For You / Following | Xiaohongshu (RED) | Video feed |
-| YouTube | Shorts | Kwai | Video feed |
-| YouTube TV | Shorts | Instagram | Reels |
-| Snapchat | Spotlight | Facebook | Reels |
-| Facebook Lite | Reels | Douyin Lite | For You |
+| TikTok | For You / Following | Instagram | Reels |
+| TikTok Lite | For You / Following | Facebook | Reels |
+| YouTube | Shorts | Facebook Lite | Reels |
+| Snapchat | Spotlight | Twitch | Clips |
 
 </div>
 
@@ -194,14 +192,18 @@ Individual apps can be toggled on or off in the settings. To request support for
 
 ### 1. Install
 
-Download Swock from the [Google Play Store](https://play.google.com/store/apps/details?id=com.swock).
+Download the APK from [GitHub Releases](https://github.com/Made-in-Jurgistan/swock-public/releases) and tap it to install
+(a Google Play listing is not live yet).
 
 ### 2. Enable
 
-1. Open **Swock**
-2. Tap **Enable Accessibility** → find Swock in the list → toggle on
-3. Toggle **Swipe Blocking** on
-4. Select which apps to protect
+1. Open **Swock** and tap **Open settings**
+2. Under **Installed apps** / **Downloaded apps**, tap **Swock** and turn it on
+3. Because Swock is installed from a file, Android shows **Restricted setting** — that is
+   expected: tap OK and press Back. Swock opens its App info page; tap **⋮ → Allow restricted
+   settings** and confirm with your PIN or fingerprint, then press Back. Swock opens Accessibility
+   again so you can turn it on (the card shows “Step 1 / 2 / 3 of 3”)
+4. Swipe Blocking is on by default — select which apps to protect
 
 ### 3. Use
 
@@ -234,9 +236,7 @@ Download Swock from the [Google Play Store](https://play.google.com/store/apps/d
 | No data transmission | The accessibility service inspects screen structure locally to classify screens — it never reads, logs, stores, or transmits text, credentials, or personal data |
 | Open privacy policy | Read the full [Privacy Policy](privacy-policy.md) |
 
-The only network activity is through Google Play Services for app integrity verification (Play
-Integrity API), which sends a random nonce, package name, and device integrity signals to Google.
-See the [Privacy Policy](privacy-policy.md) for full details.
+Swock makes no network requests at all. See the [Privacy Policy](privacy-policy.md) for full details.
 
 ---
 

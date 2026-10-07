@@ -44,8 +44,9 @@ Walk through this checklist in order:
 
 1. **Accessibility service enabled?**
    - Open Swock → the status card should show **Active**
-   - If it shows **Setup Required**, tap **Enable Accessibility** and toggle Swock on in the
-     Android accessibility settings list
+   - If it shows **Setup Required**, tap **Open settings** and follow the on-screen steps
+     (Installed/Downloaded apps → Swock). Installs from an APK file also need **Allow restricted
+     settings** — Swock opens that screen for you
 
 2. **Swipe Blocking on?**
    - Open Swock → ensure the **Swipe Blocking** toggle is on
@@ -63,10 +64,14 @@ Walk through this checklist in order:
 
 ### The accessibility service won't enable
 
-1. Go to **Settings → Accessibility → Swock**
-2. Toggle on
-3. Accept the warning dialog (this is standard for all accessibility services)
-4. Return to Swock — the status card should now show **Active**
+1. In Swock, tap **Open settings**, then open **Installed apps** / **Downloaded apps** → **Swock** → try **On**
+2. If Android shows **Restricted setting** (normal for APKs installed from a file): tap OK, press Back.
+   Swock opens its App info page — tap **More (⋮) → Allow restricted settings** and confirm with
+   PIN/fingerprint. (If ⋮ shows no such item, do step 1 first — the dialog unlocks it — then open
+   App info from **Settings → Apps**, not from Recents.)
+3. Press Back — Swock opens Accessibility again — toggle Swock **On**
+4. Accept the warning dialog (this is standard for all accessibility services)
+5. Return to Swock — the status card should now show **Active**
 
 If the toggle keeps turning off:
 - Go to **Settings → Apps → Swock → Battery**
@@ -81,7 +86,7 @@ If the toggle keeps turning off:
 ### Swock was working but stopped after an app update
 
 App updates can change internal UI structure. Swock updates are released to handle these changes.
-Check for Swock updates on Google Play. If the issue persists,
+Check [GitHub Releases](https://github.com/Made-in-Jurgistan/swock-public/releases) for a newer Swock APK. If the issue persists,
 [report it](#reporting-bugs) with the app name and version.
 
 ### Swock blocks swipes on a screen where it shouldn't

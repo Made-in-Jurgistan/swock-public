@@ -6,7 +6,7 @@
 
 **Swock — Swipe Blocker for Short Videos**
 
-**Last updated: 2026-08-08**
+**Last updated: 2026-10-07**
 
 </div>
 
@@ -18,7 +18,6 @@
 - [Data collection](#data-collection)
 - [Permissions](#permissions)
 - [Accessibility service](#accessibility-service)
-- [Play Integrity API](#play-integrity-api)
 - [Data storage](#data-storage)
 - [Third-party services](#third-party-services)
 - [Children's privacy](#childrens-privacy)
@@ -97,26 +96,12 @@ apps.
   discarded. No touch data is stored or transmitted.
 
 **Scope:**
-- The service only activates for apps the user has explicitly enabled in Swock's settings
+- The service only activates touch interception for apps the user has explicitly enabled in Swock's
+  settings, and only while a Shorts/Reels-style screen is detected; outside that window touches pass
+  unaltered
+- Completed taps and long-presses are queued and replayed locally after the held touch stream clears;
+  replay events are not stored or transmitted
 - It does not monitor apps the user has not selected
-
----
-
-## Play Integrity API
-
-Swock uses the Google Play Integrity API to verify that the app has not been tampered with or
-repackaged. This API sends the following to Google's servers:
-
-| Data sent to Google | Purpose |
-|:--------------------|:--------|
-| App package name | Verify app identity |
-| Nonce (cryptographically random value) | Prevent replay attacks |
-| Device integrity signals | Verify genuine Android device |
-
-Google's Play Integrity API is governed by
-[Google's Privacy Policy](https://policies.google.com/privacy). The integrity token is requested
-on app launch and contains no personal information. Swock does not currently have a backend
-server to verify the token — the request is made to Google's services directly from the app.
 
 ---
 
@@ -140,11 +125,10 @@ cloud service.
 
 | Service | Purpose | Data shared |
 |:--------|:--------|:------------|
-| Google Play Integrity API | App integrity verification | Nonce, package name, device signals — see [Google's privacy policy](https://policies.google.com/privacy) |
-| Google Play Store | App distribution | Governed by Google's terms |
+| GitHub Releases | APK distribution (sideload) | None — Swock itself makes no network requests; downloading the APK is governed by GitHub's terms |
 
 No other third-party services are used. No analytics SDKs, no advertising SDKs, no crash
-reporting SDKs are included.
+reporting SDKs, and no Play Integrity client are included.
 
 ---
 

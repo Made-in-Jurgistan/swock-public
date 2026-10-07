@@ -6,7 +6,7 @@
 
 **Swock — Swipe Blocker for Short Videos**
 
-**Last updated: 2026-08-08**
+**Last updated: 2026-10-07**
 
 </div>
 
@@ -64,9 +64,10 @@ content.
 The App uses the Android Accessibility Service to intercept touch gestures. By enabling the
 accessibility service, you acknowledge that:
 
-- The App receives raw touch events and accessibility node tree data from the foreground app
+- The App receives raw touch events and accessibility node tree data from enabled target apps
 - This data is processed locally and is not stored or transmitted
-- The App only activates for apps you have explicitly selected in the settings
+- The App only intercepts touches for apps you have explicitly selected, and only while a
+  Shorts/Reels-style screen is detected
 - You can disable the accessibility service at any time via Android Settings
 
 See the [Privacy Policy](privacy-policy.md) for full details on data handling.

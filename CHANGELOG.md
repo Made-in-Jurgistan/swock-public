@@ -19,9 +19,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- Play Integrity API integration for anti-repackaging verification
-- Release signing configuration for Google Play distribution
+- Guided Accessibility setup for Android 13+ restricted settings (“Step 1 / 2 / 3 of 3”), with a short
+  hint over each Settings screen; installs Android does not guard skip the extra steps
+- Release signing configuration
 - Stricter code obfuscation in release builds
+
+### Fixed
+
+- Documentation corrected: Swock supports **8** apps (not 14) and contains no Play Integrity
+  integration (it declares no INTERNET permission and makes no network requests)
 
 ---
 
@@ -30,9 +36,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - **Swipe-to-next-video blocking** in short-form video apps
-- **14 supported apps**: TikTok, TikTok Lite, TikTok (Aweme), Douyin Lite, YouTube Shorts,
-  YouTube TV, Instagram Reels, Snapchat Spotlight, Facebook Reels, Facebook Lite, Reddit,
-  Twitch Clips, Xiaohongshu, and Kwai
+- **8 supported apps**: TikTok, TikTok Lite, YouTube Shorts, Instagram Reels, Snapchat Spotlight,
+  Facebook Reels, Facebook Lite, and Twitch Clips
 - **Per-app toggle** — choose exactly which apps to protect
 - **Visual indicator badge** showing when blocking is active
 - **Full gesture pass-through**: taps, horizontal swipes, long-press, edge gestures, and

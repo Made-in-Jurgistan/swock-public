@@ -90,10 +90,8 @@ crash reporting. Everything runs locally on your device. See the
 <details>
 <summary><b>Does Swock send data to any server?</b></summary>
 
-No. Swock does not communicate with any server. The only network activity is through Google Play
-Services for app integrity verification (Play Integrity API), which sends a random nonce, package
-name, and device integrity signals to Google. See the [Privacy Policy](privacy-policy.md) for
-details.
+No. Swock does not communicate with any server. It declares no INTERNET permission, so it cannot
+make network connections. See the [Privacy Policy](privacy-policy.md) for details.
 
 </details>
 
@@ -126,8 +124,7 @@ device.
 
 Yes. Swock declares no INTERNET permission, which can be verified by inspecting the APK's manifest
 using tools like `aapt dump permissions` or any APK analyser. Without the INTERNET permission, the
-app cannot make network connections (except through Google Play Services for integrity
-verification, which is handled by the Play Services process, not Swock itself).
+app cannot make network connections.
 
 </details>
 
@@ -251,8 +248,11 @@ touch interception API that Swock uses.
 <details>
 <summary><b>Is the APK available for sideloading?</b></summary>
 
-Yes. Swock can be sideloaded. Download the APK and install it with `adb install swock.apk`. Enable
-the accessibility service after installation.
+Yes. Download the APK from [GitHub Releases](https://github.com/Made-in-Jurgistan/swock-public/releases) and install it (tap the file, or `adb install`).
+Then open Swock and follow the setup card: enable Accessibility under Installed/Downloaded apps.
+If you installed by tapping the file, Android 13+ treats the app as sideloaded and shows **Restricted
+setting** — tap OK, press Back, and Swock walks you through **Allow restricted settings** (App info →
+⋮ → Allow restricted settings) before the toggle works.
 
 </details>
 
@@ -263,8 +263,8 @@ the accessibility service after installation.
 <details>
 <summary><b>Which apps are supported?</b></summary>
 
-See the [README](README.md#supported-apps) for the full list. Swock supports 14 apps and variants
-including TikTok, YouTube, Instagram, Snapchat, Facebook, Reddit, Twitch, Xiaohongshu, and Kwai.
+See the [README](README.md#supported-apps) for the full list. Swock supports 8 apps and variants:
+TikTok, TikTok Lite, YouTube, Instagram, Snapchat, Facebook, Facebook Lite, and Twitch.
 
 </details>
 

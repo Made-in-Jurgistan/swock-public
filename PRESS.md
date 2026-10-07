@@ -50,7 +50,7 @@
 | **Data collection** | None |
 | **Network access** | None (no INTERNET permission) |
 | **Root required** | No |
-| **Download** | [Google Play](https://play.google.com/store/apps/details?id=com.swock) |
+| **Download** | Sideload APK from [GitHub Releases](https://github.com/Made-in-Jurgistan/swock-public/releases); Google Play listing not yet live |
 | **Website** | [github.com/Made-in-Jurgistan/swock-public](https://github.com/Made-in-Jurgistan/swock-public) |
 
 ---
@@ -155,13 +155,13 @@ Android's built-in accessibility framework.
 
 | Statistic | Value |
 |:----------|:------|
-| **Supported apps** | 14 (TikTok, YouTube, Instagram, Snapchat, Facebook, Reddit, Twitch, Xiaohongshu, Kwai, and variants) |
+| **Supported apps** | 8 (TikTok, YouTube, Instagram, Snapchat, Facebook, Twitch, and TikTok/Facebook Lite variants) |
 | **Data collected** | 0 bytes |
 | **Permissions requested** | 1 (Accessibility Service) |
 | **Network permissions** | 0 |
 | **Root required** | No |
 | **Minimum Android version** | 13 (API 33) |
-| **App size** | ~4 MB |
+| **App size** | ~2 MB (release build; the sideload debug APK is larger) |
 
 ---
 
@@ -309,12 +309,12 @@ always know when the protection is on.
 |:----|:----------|:---------------|:---------------|:-----------|
 | **Swock** | AccessibilityService | Swipe-to-next-video gesture only | **Yes** | None — app fully usable minus one gesture |
 | **Opal** | Screen Time API / AccessibilityService | Entire apps | No | All-or-nothing; users switch to another app |
-| **One Sec** | Shortcuts / AccessibilityService | App opening (breathing delay) | No | Friction only at open; swipe loop runs once inside |
+| **One Sec** | Shortcuts / AccessibilityService | App opening (breathing delay); on Android also removes in-app Reels/Shorts sections | No | Friction at open or section-level removal; the swipe gesture itself is untouched |
 | **AppBlock** | Screen Time API / AccessibilityService | Entire apps; some in-app sections on Android | No | Blocks the section, not the gesture; can't use Reels at all |
 | **Freedom** | Local VPN | Entire apps + websites | No | Network-level blocking; requires VPN profile |
 | **Digital Wellbeing** | Built-in Android | App timers | No | Time-based; swipe loop runs until timer expires |
 
-Swock is the only app that targets the **specific gesture** driving the compulsion, without
+Swock is, to our knowledge, the only app that targets the **specific gesture** driving the compulsion, without
 removing access to the app itself. App blockers remove the app entirely. One Sec adds friction
 before opening. Digital Wellbeing sets time limits. Swock breaks the loop *at the gesture level* —
 you can still open the app, watch a video, like, comment, and share. You just can't pull the lever
@@ -343,8 +343,8 @@ Full details: [Privacy Policy](privacy-policy.md)
 **Is Swock anti-TikTok?**
 
 No. Swock is not against any particular platform. It's a tool for people who want to change their
-own behaviour. Swock works across 14 apps — TikTok, YouTube, Instagram, Snapchat, Facebook, Reddit,
-Twitch, and others. The goal is not to stop people from using these apps, but to help them use them
+own behaviour. Swock works across 8 apps — TikTok, YouTube, Instagram, Snapchat, Facebook,
+Twitch, and the TikTok/Facebook Lite variants. The goal is not to stop people from using these apps, but to help them use them
 intentionally rather than compulsively.
 
 **Is Swock an addiction treatment?**
